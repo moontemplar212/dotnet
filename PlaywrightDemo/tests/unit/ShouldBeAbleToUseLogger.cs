@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Logging;
+using NUnit.Framework;
 
 namespace PlaywrightDemo.tests.unit
 {
@@ -7,12 +8,6 @@ namespace PlaywrightDemo.tests.unit
     {
         private readonly static string className = nameof(ShouldBeAbleToUseLogger);
         private readonly static ILogger logger = Logger.Create(className);
-            
-        [SetUp]
-        public void Setup()
-        {
-            // TODO
-        }
 
         [Test]
         public void Test()
